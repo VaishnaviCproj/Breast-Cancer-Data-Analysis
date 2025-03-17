@@ -39,9 +39,9 @@ This project automates the end-to-end data processing, machine learning model tr
 
 ### Results and Impact
 
--Seamless integration of Machine Learning, Data Engineering, and Business Intelligence, making predictive insights accessible to non-technical users.
--Automated model training and retraining for adaptability to new data without manual intervention.
--Demonstrated real-world applications of an ML-powered analytics dashboard in healthcare, aiding in early breast cancer detection.
+- Seamless integration of Machine Learning, Data Engineering, and Business Intelligence, making predictive insights accessible to non-technical users.
+- Automated model training and retraining for adaptability to new data without manual intervention.
+- Demonstrated real-world applications of an ML-powered analytics dashboard in healthcare, aiding in early breast cancer detection.
 
 ---
 
@@ -61,12 +61,13 @@ This project automates the end-to-end data processing, machine learning model tr
 3. **Set up SQL Server on your machine**.
 4. **Take the `requirements.txt`, `Dockerfile`, and `.env` file from my repo** and place them in the directory where Airflow files are present on your machine.
 5. **Create a `data` folder** in the Airflow directory.
-6. **Place the `breast_cancer_data` folder from this repo** in the `data` folder.
-7. **Place the `DataIngest.py` file in the `dags` folder in the airflow directory.**
-8. **Make sure to edit `credentials.json` file in breast_cancer_data folder with your DB details**
-9. **Create the Docker containers** to get your Airflow running.
-10. **Create a database in SQL Server** where your breast cancer data will be placed.
-11. **Run the Airflow DAG** using the command prompt or Airflow Webserver's UI.
-12. **Your data will be loaded into SQL Server**. You can use that to create a dashboard or download my `.pbix` file to get started.
+6. **Update the `docker-compose.yaml` file from airflow so that it can use `Dockerfile`** to build the containers.
+7. **Mount the `data` folder by editing `docker-compose.yaml`.**
+8. **Place the `breast_cancer_data` folder from this repo** in the `data` folder.
+9. **Place the `DataIngest.py` file in the `dags` folder in the airflow directory.**
+10. **Make sure to edit `credentials.json` file in breast_cancer_data folder with your DB details**
+11. **Create the Docker containers** to get your Airflow running.
+12. **Create a database in SQL Server** where your breast cancer data will be placed.
+13. **Run the Airflow DAG** using the command prompt or Airflow Webserver's UI.
+14. **Your data will be loaded into SQL Server**. You can use that to create a dashboard or download my `.pbix` file to get started.
 
----
