@@ -69,5 +69,5 @@ This project automates the end-to-end data processing, machine learning model tr
 11. **Create the Docker containers** to get your Airflow running.
 12. **Create a database in SQL Server** where your breast cancer data will be placed.
 13. **Run the Airflow DAG** using the command prompt or Airflow Webserver's UI.
-14. **Your data will be loaded into SQL Server**. You can use that to create a dashboard or download my `.pbix` file to get started.
+14. **Your data will be loaded into SQL Server**. You can use that to create a dashboard. You can take a look at the pdf file of my dashboard to get an idea of how to place the elements.
 
